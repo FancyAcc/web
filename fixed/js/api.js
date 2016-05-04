@@ -6,13 +6,23 @@
 	var line = utils.getElementsByClass("line")[0];
 	var about = utils.getElementsByClass("about_me")[0];
 	var load = document.getElementById("load");
-	window.setTimeout(function(){
-		animate(load, {"opacity": 0}, 1, 1000);
-		window.setTimeout(function(){
-			load.style.display = "none";
-			portraitTextAni();
-		},1000);
-	}, 3000);
+
+	function fnLoad() {
+		var me = utils.getElementsByClass("meImg")[0];
+		var realSrc = me.getAttribute('realSrc');
+		console.log(realSrc);
+		me.src = realSrc + "?" + Math.random();
+		me.onload = function() {
+			animate(load, {"opacity": 0}, 1, 1000);
+			window.setTimeout(function(){
+				load.style.display = "none";
+				portraitTextAni();
+			},1000);
+		}
+	}
+	fnLoad();
+
+
 	function portraitTextAni() {
 		var i = 0;
 		function step() {
