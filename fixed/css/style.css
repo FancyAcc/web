@@ -827,6 +827,14 @@
   line-height: 200px;
 }
 
+.mobile_demo:hover .mobile_title {
+  display: none;
+}
+
+#mobile {
+  width: 200px;
+  height: 200px;
+}
 
 /*section4*/
 
