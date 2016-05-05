@@ -1269,3 +1269,12 @@
 #section4 .container p {
   margin: 40px 0;
 }
+
+@media all and (min-width: 1500px) {
+  #section4 .container p {
+    font-size: 30px;
+  }
+  #section4 .container h2 {
+    font-size: 35px;
+  }
+}
