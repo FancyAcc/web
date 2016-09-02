@@ -96,13 +96,14 @@ div, ul, li, input{
     margin-left: -8px;
 }
 ul {
-    width: 538px;
-    border: 1px solid #999;
+    width: 535px;
+    border: 1px solid rgba(153, 153, 153, 0.39);
     position: absolute;
-    top: 131px;
-    left: 79px;
+    top: 125px;
+    left: 81px;
     cursor: initial;
     display: none;
+    border-top: 0;
 }
 ul li {
     text-align: left;
